@@ -113,10 +113,10 @@ Below is a sample OVAL definition file::
    <notes>
    <note>This sample was based on an OVAL definition included in the Windows Server 2016 STIG available at https://iase.disa.mil/ </note>
    </notes>
-   criteria operator="AND">
-      <!--
-      The criteria element specifies the assertion to be tested using information gathered from the endpoint.
-      -->
+      <criteria operator="AND">
+         <!--
+         The criteria element specifies the assertion to be tested using information gathered from the endpoint.
+         -->
          <criterion comment="Verifies 'WinRM Client: Allow unencrypted traffic' is set to 'Disabled'" test_ref="oval:org.oval-community.example:tst:1"/>\
             <!--
             The criterion elements define logical terms in the assertion. This criteria only uses 1 criterion element to check if 'WinRM Client: Allow unencrypted traffic' is set to 'Disabled'.
